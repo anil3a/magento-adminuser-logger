@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<config>
+		<modules>
+			<Jhinewa_Magelogger>
+				<version>1.0.0</version>
+			</Jhinewa_Magelogger>
+		</modules>
+
+		<global>
+			<models>
+				<magelogger>
+					<class>Jhinewa_Magelogger_Model</class>
+				</magelogger>
+			</models>
+		</global>
+
+		<frontend>
+			<events>
+				<controller_action_predispatch>
+					<observers>
+						<jhinewa_magelogger_controller_action_predispatch>
+							<class>jhinewa_magelogger/observer</class>
+							<method>hookToFrontendControllerActionPredispatch</method>
+						</jhinewa_magelogger_controller_action_predispatch>
+					</observers>
+				</controller_action_predispatch>
+			</events>
+		</frontend>
+
+		<adminhtml>
+			<events>
+				<controller_action_predispatch>
+					<observers>
+						<activecodeline_actionlogger_controller_action_predispatch>
+							<class>jhinewa_magelogger/observer</class>
+							<method>hookToAdminhtmlControllerActionPredispatch</method>
+						</activecodeline_actionlogger_controller_action_predispatch>
+					</observers>
+				</controller_action_predispatch>
+			</events>
+		</adminhtml>
+	</config>
