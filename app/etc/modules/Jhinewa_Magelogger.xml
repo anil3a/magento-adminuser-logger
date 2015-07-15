@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * ASMEX
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade or update
+ * please contact software developer at anilprz3@gmail.com
+ *
+ * @category    Jhinewa
+ * @package     Jhinewa_Magelogger
+ * @copyright   Copyright (c) 2015 
+ */
+-->
+<config>
+    <modules>
+    	<Jhinewa_Magelogger>
+    		<active>true</active>
+    		<codePool>community</codePool>
+    	</Jhinewa_Magelogger>        
+    </modules>
+</config>
